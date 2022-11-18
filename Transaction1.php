@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types=1)
+declare(strict_types=1);
 
-class Trasaction
+class Transaction1
 {
  public float $cantidad;
  public string $descripcion;
@@ -12,13 +12,13 @@ class Trasaction
      $this->cantidad= $cantidad;
      $this->descripcion=$descripcion;
  }
- public function addTax(float $rate): Trasaction
+ public function addTax(float $rate): Transaction1
  {
          $this->cantidad += $this->cantidad * $rate / 100;
 
          return $this;
  }
- public function applyDiscount(float $rate): Trasaction
+ public function applyDiscount(float $rate): Transaction1
  {
      $this->cantidad -= $this->cantidad * $rate / 100;
 

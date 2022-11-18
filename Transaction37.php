@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-class Trasactions
+class Transaction37
 {
     private ?Customer $customer = null;
     private float $cantidad;
     private string $descripcion;
 
-    public function __construct(private float $cantidad, private string $descripcion)
+    public function __construct(private float $Cantidad, private string $Descripcion)
     {
 
     }
